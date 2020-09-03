@@ -130,6 +130,10 @@ main {
   height: 4.5em;
 }
 
+#signup .signup-card form .form-field .active {
+  height: 4.5em;
+}
+
 #signup .signup-card form .form-field .input input {
   box-sizing: border-box;
   width: 100%;
@@ -181,6 +185,7 @@ main {
   padding-top: 0.25em; /* shadow size */
   cursor: pointer;
   letter-spacing: 2px;
+  outline: none;
 }
 
 #signup .signup-card .nota-bene {
@@ -266,6 +271,10 @@ footer .attribution a {
 
   #signup .signup-card form .form-field {
     height: 5em;
+  }
+
+  #signup .signup-card form .form-field.error-active {
+    height: 6.5em;
   }
 
   #signup .signup-card form .form-field .input input {
