@@ -33,7 +33,7 @@ main {
   min-height: 100vh;
   background: url(./images/bg-intro-mobile.png), var(--red);
   font-family: var(--font-family);
-  padding-top: 6em;
+  padding-top: 5.5em;
   padding-bottom: 4.25em;
 }
 
@@ -50,7 +50,7 @@ main {
 }
 
 .mb-1 {
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 
 .mb-2 {
@@ -58,7 +58,7 @@ main {
 }
 
 .mb-3 {
-  margin-bottom: 4em;
+  margin-bottom: 3.5em;
 }
 
 .ph-2 {
@@ -97,13 +97,13 @@ main {
 #presentation {
   color: white;
   text-align: center;
-  line-height: 1.75em;
+  line-height: 1.6em;
   font-weight: var(--font-weight-medium);
 }
 
 #presentation h1 {
   font-weight: var(--font-weight-bold);
-  line-height: 1.25em;
+  line-height: 1.2em;
   font-size: 2em;
 }
 
@@ -137,6 +137,8 @@ main {
   border: 1px solid var(--grayish-blue);
   padding-right: 5em;
   font-family: var(--font-family);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--dark-blue);
 }
 
 #signup .signup-card form .form-field .input input::placeholder {
