@@ -139,6 +139,11 @@ main {
   font-family: var(--font-family);
   font-weight: var(--font-weight-semi-bold);
   color: var(--dark-blue);
+  outline: none;
+}
+
+#signup .signup-card form .form-field .input input:focus {
+  border: 1px solid var(--dark-blue);
 }
 
 #signup .signup-card form .form-field .input input::placeholder {
@@ -207,4 +212,81 @@ footer .attribution a {
 /* Media queries */
 
 @media all and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* General */
+
+  main {
+    flex-direction: row;
+    max-height: 100vh;
+    background: top center no-repeat url(./images/bg-intro-desktop.png), var(--red);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  article {
+    width: 50%;
+  }
+
+  /* First article */
+
+  #presentation {
+    padding: 18.4em 3.625em 0 8.8em;
+    text-align: left;
+  }
+
+  #presentation h1 {
+    font-size: 3em;
+    letter-spacing: 0.5px;
+    line-height: 1.18em;
+    margin-bottom: 0.575em;
+  }
+
+  #presentation p {
+    font-weight: var(--font-weight-regular);
+  }
+
+  /* Second article */
+
+  #signup {
+    padding-top: 7.5em;
+    padding-left: 0.875em;
+  }
+
+  #signup header,
+  #signup .signup-card {
+    max-width: 33.75em;
+  }
+
+  #signup header {
+    padding: 1.05em 0 1.05em 0;
+  }
+
+  #signup .signup-card {
+    padding: 2.5em;
+  }
+
+  #signup .signup-card form .form-field {
+    height: 5em;
+  }
+
+  #signup .signup-card form .form-field .input input {
+    height: 4.45em;
+    padding-left: 2.5em;
+  }
+
+  #signup .signup-card form .form-field .input img {
+    transform: translateY(75%);
+  }
+
+  #signup .signup-card form .form-field .error-text {
+    bottom: 1.75em;
+  }
+
+  #signup .signup-card form button {
+    height: 3.65em;
+    font-size: 1em;
+  }
+
+  #signup .signup-card .nota-bene {
+    font-weight: var(--font-weight-medium);
+  }
 }
