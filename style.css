@@ -1,7 +1,81 @@
+/* Configuration */
+
+/* font-family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* variables from style guide */
+:root {
+  /* primary colors */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* accent color */
+  --blue: hsl(248, 32%, 49%);
+
+  /* neutral colors */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+
+  /* font */
+  --font-size: 16px;
+  --font-family: "Poppins", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}
+
+/* General */
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url(./images/bg-intro-mobile.png), var(--red);
+  padding-top: 6em;
+  padding-bottom: 4.25em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 1.5em;
+}
+
+.mb-3 {
+  margin-bottom: 4em;
+}
+
+.ph-2 {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.pv-2 {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.ph-4 {
+  padding-left: 4.5em;
+  padding-right: 4.5em;
+}
+
+/* Footer page */
+
 footer .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 1vh;
 }
+
 footer .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media all and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
 }
